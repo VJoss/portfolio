@@ -1,0 +1,245 @@
+body {
+    background: #1a1a1a; /* Couleur de fond sombre */
+    color: #ffffff; /* Texte en couleur claire */
+    font-family: 'Roboto', sans-serif; /* Police de caractères principale */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #333, #1a1a1a); /* Dégradé horizontal sombre */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Couleur du texte sombre pour les titres */
+}
+
+h1 {
+    font-size: 2.5em; /* Taille du texte pour h1 */
+}
+
+h2 {
+    font-size: 2em; /* Taille du texte pour h2 */
+}
+
+h3 {
+    font-size: 1.8em; /* Taille du texte pour h3 */
+}
+
+#profile {
+    background: #282828; /* Fond sombre pour la section "À propos de moi" */
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.profile-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+section {
+    background: #282828; /* Fond des sections sombre */
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em; /* Taille du texte pour les paragraphes */
+}
+
+footer {
+    background: linear-gradient(to right, #333, #1a1a1a); /* Dégradé horizontal sombre pour le pied de page */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Liens */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+/* Boutons */
+button {
+    background: linear-gradient(to right, #3498db, #2980b9); /* Dégradé horizontal pour le bouton */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em; /* Taille du texte pour les boutons */
+}
+
+button:hover {
+    background: linear-gradient(to right, #2980b9, #3498db); /* Inversion du dégradé au survol */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles pour les écrans d'une largeur maximale de 600 pixels (par exemple, pour les téléphones) */
+@media screen and (max-width: 600px) {
+    /* Styles spécifiques aux petits écrans ici */
+}
+
+#projects {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Empêche le débordement des projets */
+}
+
+.project-container {
+    display: flex; /* Utilisation de flexbox pour aligner horizontalement les projets */
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne (par défaut, c'est "wrap") */
+    overflow-x: auto; /* Activation de la barre de défilement horizontale si nécessaire */
+    scrollbar-width: thin; /* Personnalisation de la largeur de la barre de défilement */
+}
+
+.project {
+    width: 300px;
+    margin-right: 20px; /* Espacement entre les projets */
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajout d'une légère ombre */
+}
+
+.project img {
+    width: 100%;
+    height: 200px; /* Taille fixe pour toutes les images */
+    object-fit: cover; /* Garantit que l'image couvre la zone spécifiée sans déformation */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #ffffff;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #2980b9;
+}
+
+/* Ajout de styles pour les boutons de navigation */
+.scroll-button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#contact {
+    background: #282828;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.card-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.card-details {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
