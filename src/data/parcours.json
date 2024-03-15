@@ -1,0 +1,30 @@
+{
+    "title":"Mon parcours",
+    "description": "Je suis un développeur passionné avec une expérience professionnelle variée. Pendant plus de 17 ans, j'ai travaillé dans le domaine de la vente, acquérant ainsi des compétences précieuses en communication, en relations interpersonnelles et en gestion de clients. Ma transition vers le monde du développement informatique a débuté comme un voyage d'auto-apprentissage. J'ai commencé par explorer le code par moi-même, en parcourant divers sites statiques et en expérimentant avec des langages de programmation. Mon intérêt pour la création de jeux vidéo m'a conduit à découvrir le langage Lua et à développer des jeux simples tels que Pong en utilisant le framework Love2D.Actuellement engagé dans une reconversion professionnelle, je suis en formation pour devenir concepteur développeur d'applications. Cette transition représente pour moi l'opportunité de concrétiser ma passion pour la technologie en une carrière gratifiante.Ce qui me distingue en tant que développeur, c'est ma curiosité insatiable pour le code. Chaque jour, je suis animé par le désir de comprendre les rouages du développement logiciel, que ce soit en explorant de nouvelles technologies, en résolvant des problèmes complexes ou en étudiant les principes fondamentaux de l'informatique. Pour moi, le monde du développement est une source infinie d'apprentissage et d'exploration, et j'aborde chaque projet avec un enthousiasme et un dévouement inébranlables.Mon parcours atypique et ma détermination à élargir mes compétences font de moi un développeur polyvalent et adaptable, capable de relever avec succès les défis variés du monde de la programmation.",
+    "projects": [
+        {
+            "title": "Blog diablo 2 statique",
+            "description": "La toute premiere pratique des bases html/css en autodidacte",
+            "link": "https://github.com/VJoss/Page-vitrine-guilde-Diablo",
+            "image": "https://image.noelshack.com/fichiers/2024/11/4/1710411467-diablosite.jpg"
+        },
+        {
+            "title": "Apple watch statique",
+            "description": "Second test de html/css afin de mieux intégré la structure et la mise en forme",
+            "link": "https://github.com/VJoss/Page-vitrine-achat-montre",
+            "image": "https://image.noelshack.com/fichiers/2024/11/4/1710411662-montresite.png"
+        },
+        {
+            "title": "Jeu Pong",
+            "description": "Premier jeu pong en Lua Framework Love2D",
+            "link": "https://github.com/VJoss/love2d",
+            "image": "https://user-images.githubusercontent.com/115996969/234824047-2f98ee19-98f8-49a7-9059-abcdcd659fef.png"
+        },
+        {
+            "title": "Chronometre",
+            "description": "Projet Chronometre en java script",
+            "link": "https://github.com/VJoss/Chronometre",
+            "image": "https://image.noelshack.com/fichiers/2024/11/4/1710413307-294134147-648429f8-ab63-4ef4-8671-c32bb24482e8.png"
+        }
+    ]
+}

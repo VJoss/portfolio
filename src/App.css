@@ -1,0 +1,224 @@
+/* styles.css */
+
+body {
+  background-color: #121212; /* Couleur de fond sombre */
+  color: #fff; /* Couleur du texte */
+
+}
+
+header {
+  padding: 20px 0;
+  text-align: center;
+  background-image: url('https://tamalsen.dev/wp-content/uploads/2021/07/tamalsen-home-cover.jpg');
+  background-size:cover;
+  position: relative;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+}
+.filter {
+  width: 100%;
+  height: 103%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.07) 60%, #121212 100%);
+  background-color: transparent;
+  opacity: 1;
+
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 350px;
+  
+}
+
+.title-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 0 5em #ffffff56, 0 0 10px #ffffff52, 0 0 30px #ffffff75;
+}
+
+.profile h1 {
+  margin: 0;
+  font-family: "Poppins",Sans-serif;
+  font-size: 5vw;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  color: #fff; /* Couleur du texte */
+  text-align: center;
+  text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
+}
+
+.profile p {
+  margin: 5px 0 0;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  text-align: center;
+  text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
+}
+
+nav {
+  margin-top: 10px; /* Espace supplémentaire en haut de la barre de navigation */
+  font-family: 'Roboto mono';
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+  text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block; /* Permet de centrer horizontalement la liste */
+  
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Couleur du texte */
+  font-size: 25px;
+  line-height: 1.3;
+  position: relative;
+  transition: color 0.3s; /* Transition pour une animation fluide */
+}
+
+nav ul li a:hover {
+  color: #955536; /* Couleur du texte au survol */
+
+}
+
+nav ul li:not(:hover) {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+  justify-content: center;
+}
+
+.social-icons a {
+  margin-right: 10px; /* Espacement entre les icônes */
+}
+
+.social-icons svg {
+  width: 35px; /* Taille des icônes */
+  height: 35px;
+
+}
+
+.portefolio-item {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 200px;
+
+}
+
+.bloc-presentation {
+  border:solid;
+  border-color: rgba(128, 128, 128, 0.705);
+  padding: 40px;
+  background-color: #15202bbd;
+  border-radius: 8px;
+}
+
+.titre-presentation {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+  font-family: "Poppins",Sans-serif;
+  text-align: center;
+  text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
+}
+
+.description-presentation {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5; /* Augmente l'espacement entre les lignes */
+  text-align: justify; /* Justifie le texte */
+}
+
+.Titre-projets {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.4em;
+  font-family: "Poppins",Sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
+}
+
+.bloc-projets {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  line-height: 1.4em;
+  font-family: "Poppins",Sans-serif;
+}
+
+.carte-projet {
+  flex: 1;
+  background-color: #15202b;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: calc(50% - 10px); /* Pour que deux projets s'affichent par ligne */
+  transition: transform 1s ease-in-out;
+}
+
+.carte-projet:hover {
+  transform: scale(1.3) ;
+  box-shadow: 0 0 5em #00000056, 0 0 10px #00000052, 0 0 30px #00000075; ;
+}
+
+.carte-projet h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.carte-projet p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.carte-projet a {
+  color: #955536;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.carte-projet a:hover {
+  text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
+}
+
+.carte-projet img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+  margin-top: 10px;
+}
