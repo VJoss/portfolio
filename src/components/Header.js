@@ -20,7 +20,10 @@ const handleScroll = () => {
  
 
   setPrevScrollPos(currentScrollPos);
+
 };
+
+
 
 
   return (

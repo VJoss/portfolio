@@ -222,3 +222,36 @@ nav ul li:not(:hover) {
   border-radius: 7px;
   margin-top: 10px;
 }
+
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    width: 100%;
+    display: block;
+  }
+  .profile img {
+    margin-right: 0px;
+  }
+  .bloc-presentation {
+    padding: 0%;
+  }
+ .portefolio-item {
+  padding: 40px;
+ }
+ .bloc-projets {
+  display: flex;
+  flex-direction: row; /* Afficher les projets en colonne */
+  flex-wrap: wrap;
+ }
+ .navigation {
+  display: block;
+ }
+ nav ul li {
+  margin: 0;
+ }
+ .carte-projet {
+  width: 80%; /* Occupera la largeur complète */
+  max-width: 200px; /* Largeur maximale pour éviter un étirement excessif */
+  text-align: center; 
+ }
+}
