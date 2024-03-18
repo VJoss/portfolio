@@ -8,6 +8,9 @@ function PortefolioItem () {
     useEffect(() => {
         setPortefolioData(jsonData);
     }, []);
+    const openProjectSite = (link) => {
+        window.open(link, "_blank"); // Ouvre le lien dans une nouvelle fenêtre ou un nouvel onglet
+    };
 
     return (
         <div className="portefolio-item">
@@ -20,10 +23,10 @@ function PortefolioItem () {
                 <h3 id="projets">Projets</h3>
                 <ul className="bloc-projets">
                     {PortefolioData.projects.map((project, index) => (
-                        <li className="carte-projet"key={index}>
+                        <li className="carte-projet"key={index} onClick={() => openProjectSite(project.link)}>
                             <h4>{project.title}</h4>
                             <p>{project.description}</p>
-                            <a href={project.link}>voir sur Github</a>
+                            
                             <img src={project.image} alt={project.title}/>
                         </li>
                     ))}

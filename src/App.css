@@ -20,7 +20,6 @@ header {
 .navigation {
   position: fixed;
   width: 100%;
-  justify-content: center;
 }
 .filter {
   width: 100%;
@@ -70,13 +69,19 @@ header {
   text-align: center;
   text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
 }
-
+.menu {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
 nav {
-  height: 60px; /* Espace supplémentaire en haut de la barre de navigation */
+  height: 60px; 
+  padding-top: 20px;/* Espace supplémentaire en haut de la barre de navigation */
+  text-align: center;
   font-family: 'Roboto mono';
   font-size: 1.4rem;
   letter-spacing: -1px;
-  text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
+  text-shadow: 0 0 10px #ffffffa8, 0 0 20px #ffffff91, 0 0 30px #ffffff4d;
 }
 
 nav ul {
@@ -99,18 +104,11 @@ nav ul li a {
   font-size: 25px;
   line-height: 1.3;
   position: relative;
-  transition: color 0.3s; /* Transition pour une animation fluide */
 }
 
 nav ul li a:hover {
-  text-shadow: 0 0 25px #ffffff56, 0 0 35px #ffffff52, 0 0 45px #ffffff75;
-
+  text-shadow: 0 0 6px #ffffffe3, 0 0 16px #ffffffb9, 0 0 24px #ffffff8e;
 }
-
-nav ul li:not(:hover) {
-  text-shadow: rgba(58, 57, 57, 0.712);
-}
-
 .social-icons {
   justify-content: center;
 }
