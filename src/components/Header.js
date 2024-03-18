@@ -27,7 +27,13 @@ function Header() {
       <ScrollHideShow handleScroll={handleScroll} />
       <div className="filter">
         <div className="menu">
-      <nav className='navigation' style={{ display: isVisible ? 'block' : 'none', backgroundColor: isAtTop ? 'transparent' : '#141c24', borderRadius: isAtTop ?'transparent' : '30px', width: isAtTop ? '' : '450px'}}>
+      <nav className='navigation' style={{ display: isVisible ? 'block' : 'none',
+       backgroundColor: isAtTop ? 'transparent' : '#141c24',
+        borderRadius: isAtTop ?'transparent' : '25px',
+          marginTop: isAtTop ? '0px': '15px', 
+           boxShadow: isAtTop ? '':'rgba(255, 255, 255, 0.11) 0px 0px 5px,  rgba(255, 255, 255, 0.27) 0px 0px 30px',
+            textAlign: isAtTop ? '':'center',
+            }}>
         <ul>
           <li><a href="#accueil">// Accueil</a></li>
           <li><a href="#parcours">// Parcours</a></li>
