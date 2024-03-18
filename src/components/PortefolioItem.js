@@ -13,11 +13,11 @@ function PortefolioItem () {
         <div className="portefolio-item">
             {PortefolioData && (
                 <>
-                <div className="bloc-presentation">
+                <div id="parcours">
                 <h2 className="titre-presentation">{PortefolioData.title}</h2>
                 <p className="description-presentation">{PortefolioData.description}</p>
                 </div>
-                <h3 className="Titre-projets">Projets</h3>
+                <h3 id="projets">Projets</h3>
                 <ul className="bloc-projets">
                     {PortefolioData.projects.map((project, index) => (
                         <li className="carte-projet"key={index}>
@@ -32,8 +32,8 @@ function PortefolioItem () {
             )}
 
 <div className="social-icons">
-            <a href="https://www.linkedin.com/in/jossua-verdelet-1052bb257/"><FaLinkedin /></a>
-            <a href="https://github.com/VJoss"><FaGithub /></a>
+            <a className="social-icon" href="https://www.linkedin.com/in/jossua-verdelet-1052bb257/"><FaLinkedin /></a>
+            <a className="social-icon" href="https://github.com/VJoss"><FaGithub /></a>
         </div>
         </div>
     );

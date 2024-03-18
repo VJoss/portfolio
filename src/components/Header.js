@@ -7,21 +7,17 @@ import ScrollHideShow from './ScrollHideShow';
 function Header() {
 
   const [isVisible, setIsVisible] = useState(true);
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset); // Déclaration de prevScrollPos et setPrevScrollPos
+  const [isAtTop, setIsAtTop] = useState(true);
 
-const handleScroll = () => {
-  const currentScrollPos = window.pageYOffset;
-  const visible = currentScrollPos < prevScrollPos || currentScrollPos < 100; // Détermine si la barre doit être visible lors du défilement vers le haut
-  const scrolledDown= currentScrollPos < prevScrollPos; // Vérifie si le défilement est vers le haut
-  const scrolledUp= currentScrollPos > prevScrollPos; // Vérifie si le défilement est vers le bas
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+
+    // Cache le menu lorsque la position de défilement est entre 100 et 600 pixels
+    setIsVisible(currentScrollPos < 100 || currentScrollPos > 600);
+
+    setIsAtTop(currentScrollPos <= 600);
+  };
   
-  // Détermine si la barre doit être visible en fonction de la direction du défilement
-  setIsVisible(visible || (scrolledUp && currentScrollPos > 600));
- 
-
-  setPrevScrollPos(currentScrollPos);
-
-};
 
 
 
@@ -30,15 +26,17 @@ const handleScroll = () => {
     <header>
       <ScrollHideShow handleScroll={handleScroll} />
       <div className="filter">
-      <nav className='navigation' style={{ display: isVisible ? 'block' : 'none' }}>
+      <nav className='navigation' style={{ display: isVisible ? 'block' : 'none', backgroundColor: isAtTop ? 'transparent' : '#141c24' }}>
+        <div className="menu">
         <ul>
           <li><a href="#accueil">// Accueil</a></li>
-          <li><a href="#portfolio">// Portfolio</a></li>
-          <li><a href="#apropos">// À propos</a></li>
+          <li><a href="#parcours">// Parcours</a></li>
+          <li><a href="#projets">// Projets</a></li>
           <li><a href="#contact">// Contact</a></li>
         </ul>
+        </div>
       </nav>
-      <div className="profile">
+      <div id="accueil">
         <img src="https://media.licdn.com/dms/image/D4D03AQHw6VWue72D_w/profile-displayphoto-shrink_800_800/0/1699292195270?e=2147483647&v=beta&t=N3E0EgcJNcoF0dhf4mMEiWjfHonaA1N-MvxjGlx4HW0" alt="Portrait de mon profile" />
         <div className="title-header">
           <h1>Verdelet Jossua</h1>

@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  padding: 20px 0;
+  padding: 0px 0;
   text-align: center;
   background-image: url('https://tamalsen.dev/wp-content/uploads/2021/07/tamalsen-home-cover.jpg');
   background-size:cover;
@@ -31,12 +31,11 @@ header {
 
 }
 
-.profile {
+#accueil {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 350px;
-  
 }
 
 .title-header {
@@ -44,7 +43,7 @@ header {
   flex-direction: column;
 }
 
-.profile img {
+#accueil img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -52,7 +51,7 @@ header {
   box-shadow: 0 0 5em #ffffff56, 0 0 10px #ffffff52, 0 0 30px #ffffff75;
 }
 
-.profile h1 {
+#accueil h1 {
   margin: 0;
   font-family: "Poppins",Sans-serif;
   font-size: 5vw;
@@ -63,7 +62,7 @@ header {
   text-shadow: 0 0 10px #ffffff56, 0 0 20px #ffffff52, 0 0 30px #ffffff75;
 }
 
-.profile p {
+#accueil p {
   margin: 5px 0 0;
   font-size: 22px;
   text-transform: uppercase;
@@ -73,7 +72,7 @@ header {
 }
 
 nav {
-  margin-top: 10px; /* Espace supplémentaire en haut de la barre de navigation */
+  height: 60px; /* Espace supplémentaire en haut de la barre de navigation */
   font-family: 'Roboto mono';
   font-size: 1.4rem;
   letter-spacing: -1px;
@@ -104,12 +103,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #955536; /* Couleur du texte au survol */
+  text-shadow: 0 0 25px #ffffff56, 0 0 35px #ffffff52, 0 0 45px #ffffff75;
 
 }
 
 nav ul li:not(:hover) {
-  color: rgba(255, 255, 255, 0.5);
+  text-shadow: rgba(58, 57, 57, 0.712);
 }
 
 .social-icons {
@@ -133,7 +132,7 @@ nav ul li:not(:hover) {
 
 }
 
-.bloc-presentation {
+#parcours {
   border:solid;
   border-color: rgba(128, 128, 128, 0.705);
   padding: 40px;
@@ -158,7 +157,7 @@ nav ul li:not(:hover) {
   text-align: justify; /* Justifie le texte */
 }
 
-.Titre-projets {
+#projets {
   font-size: 45px;
   font-weight: 600;
   line-height: 1.4em;
@@ -222,17 +221,22 @@ nav ul li:not(:hover) {
   border-radius: 7px;
   margin-top: 10px;
 }
-
+.social-icon{
+  color: #1e68d6;
+}
+.social-icons:visited {
+  color: inherit;
+}
 
 @media screen and (max-width: 1024px) {
-  .profile {
+  #accueil {
     width: 100%;
     display: block;
   }
-  .profile img {
+  #accueil img {
     margin-right: 0px;
   }
-  .bloc-presentation {
+  #parcours {
     padding: 8%;
   }
  .portefolio-item {
