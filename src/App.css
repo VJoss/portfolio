@@ -233,15 +233,16 @@ nav ul li:not(:hover) {
     margin-right: 0px;
   }
   .bloc-presentation {
-    padding: 0%;
+    padding: 8%;
   }
  .portefolio-item {
   padding: 40px;
  }
  .bloc-projets {
-  display: flex;
-  flex-direction: row; /* Afficher les projets en colonne */
+  display: webkit-inline-box;
+  flex-direction: column; /* Afficher les projets en colonne */
   flex-wrap: wrap;
+  align-content: center;
  }
  .navigation {
   display: block;
