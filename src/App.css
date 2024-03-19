@@ -182,6 +182,7 @@ section {
 }
 .social-icon{
   color: #1e68d6;
+  cursor: pointer;
 }
 .social-icons:visited {
   color: inherit;
