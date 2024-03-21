@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import jsonData from '../data/parcours.json';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 

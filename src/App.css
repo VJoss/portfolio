@@ -8,13 +8,14 @@ body {
 html {
   font-size: 16px;
 }
-section {
+header {
   padding: 0px 0;
   text-align: center;
   background-image: url('https://tamalsen.dev/wp-content/uploads/2021/07/tamalsen-home-cover.jpg');
   background-size:cover;
   background-position: center center;
   height: 100vh;
+  width: 100%;
 }
 
 .filter {
@@ -188,7 +189,8 @@ section {
   color: inherit;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+
   #accueil {
     width: 100%;
     display: flex;
@@ -212,12 +214,17 @@ section {
  .navigation {
   display: block;
  }
- nav ul li {
-  margin: 0;
- }
  .carte-projet {
   width: 80%; /* Occupera la largeur complète */
   max-width: 200px; /* Largeur maximale pour éviter un étirement excessif */
   text-align: center; 
  }
+}
+@media screen and (min-width: 768px) { 
+  .bloc-projets {
+  display: flex;
+  flex-direction: row; /* Afficher les projets en colonne */
+  flex-wrap:nowrap;
+  align-content: center;
+  }
 }

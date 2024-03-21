@@ -6,8 +6,10 @@ import gsap from 'gsap';
 
 function Menu() {
 
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
+  
 
     const toggleMenu = () => {
       if (!isAnimating) {
@@ -42,10 +44,11 @@ function Menu() {
   
       timeline.play();
     }, [isMenuOpen]);
-  
+
+
     
     return(
-      <header>
+      <section>
         <nav className={`navigation ${isMenuOpen ? 'open' : ''}`}>
         <div className='toggle' onClick={toggleMenu}>
           <i className='fas fa-bars ouvrir'><FaBars></FaBars></i>
@@ -99,7 +102,7 @@ function Menu() {
             <div className="sep_icon">#VJ</div>
         </div>
       </nav>
-      </header>
+      </section>
     );
 }
 export  default Menu;

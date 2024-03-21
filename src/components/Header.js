@@ -5,7 +5,7 @@ import React from 'react';
 function Header() {
 
   return (
-    <section>
+    <header>
       <div className="filter">
       <div id="accueil">
         <img src="https://media.licdn.com/dms/image/D4D03AQHw6VWue72D_w/profile-displayphoto-shrink_800_800/0/1699292195270?e=2147483647&v=beta&t=N3E0EgcJNcoF0dhf4mMEiWjfHonaA1N-MvxjGlx4HW0" alt="Portrait de mon profile" />
@@ -15,7 +15,7 @@ function Header() {
           </div>
         </div>
         </div>
-    </section>
+    </header>
   );
 }
 
