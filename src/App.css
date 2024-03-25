@@ -202,6 +202,10 @@ header {
   #parcours {
     padding: 8%;
   }
+  .titre-presentation {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
  .portefolio-item {
   padding: 40px;
  }

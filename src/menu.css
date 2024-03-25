@@ -60,7 +60,6 @@ section {
 }
 .open .menu_left, .open .menu_right {
     transform: translateX(0);
-    
 }
 
 .menu_left, .menu_right {
